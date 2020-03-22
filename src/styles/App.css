@@ -1,0 +1,18 @@
+html {
+  font-size: 125%;
+}
+
+.App {
+  display: 'flex';
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 94%;
+  }
+}
