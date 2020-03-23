@@ -4,11 +4,8 @@ const styles = props => {
   const { sm, md, lg, xl } = props.breakPoints;
   return {
     header: {
-      height: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center'
+      paddingTop: '60px',
+      paddingBottom: '40px'
     },
     textContainer: {
       margin: ' 0 auto',
@@ -75,6 +72,9 @@ const styles = props => {
       }
     },
     [`@media (min-width: ${sm}px)`]: {
+      header: {
+        paddingTop: '80px'
+      },
       textContainer: {
         width: '75%'
       },
@@ -84,6 +84,9 @@ const styles = props => {
       }
     },
     [`@media (min-width: ${md}px)`]: {
+      header: {
+        paddingTop: '100px'
+      },
       textContainer: {
         width: '60%'
       },
@@ -94,10 +97,12 @@ const styles = props => {
     },
     [`@media (min-width: ${lg}px)`]: {
       header: {
+        height: '100vh',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingTop: 0
       },
       textContainer: {
         width: '40%',
@@ -124,5 +129,4 @@ const styles = props => {
     }
   };
 };
-
 export default styles;
